@@ -65,7 +65,7 @@ public class Product implements Comparable<Product> {
         return "San Pham{" +
                 "Ma san pham: '" + productCode + '\'' +
                 ", Ten: '" + productName + '\'' +
-                ", Gia: " + numberFormat.format(productPrice) + "VND"+
+                ", Gia: " + numberFormat.format(productPrice) + " VND" +
                 ", So luong: " + productAmount +
                 ", Mo ta: '" + productDescribe + '\'' +
                 '}';

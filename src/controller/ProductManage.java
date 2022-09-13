@@ -1,15 +1,13 @@
 package controller;
 
 import model.Product;
-import storage.WriteData;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
 public class ProductManage {
-   public static ArrayList<Product> products = new ArrayList<>();
+    public static ArrayList<Product> products = new ArrayList<>();
 
     public Product creatProduct(Scanner scanner) {
         System.out.println("Nhap ma san pham: ");
@@ -78,6 +76,7 @@ public class ProductManage {
             System.err.println("Khong tim thay san pham ! " + code);
         }
     }
+
     public void sortProductsByPriceAscending() {
         Comparator<Product> comparator = new Comparator<Product>() {
             @Override
@@ -89,6 +88,7 @@ public class ProductManage {
         System.out.println("Danh sach san pham da duoc xep theo gia tang dan: ");
         displayProduct();
     }
+
     public void sortProductByPriceDescending() {
         Comparator<Product> comparator = new Comparator<Product>() {
             @Override
@@ -100,6 +100,7 @@ public class ProductManage {
         System.out.println("Danh sach san pham da duoc xep theo gia giam dan: ");
         displayProduct();
     }
+
     public void searchMaxPrice() {
         double max = 0;
         int product = 0;
